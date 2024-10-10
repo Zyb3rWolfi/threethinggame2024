@@ -1,0 +1,8 @@
+namespace GameObject;
+
+
+class GameObject
+{
+
+
+}
