@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/garro/Desktop/threethinggame2024/GameJam/Content/bullet.png</SourceFile>
-  <SourceTime>2024-10-11T12:45:13.4588264+01:00</SourceTime>
+  <SourceTime>2024-10-11T13:14:45.6065057+01:00</SourceTime>
   <DestFile>C:/Users/garro/Desktop/threethinggame2024/GameJam/Content/bin/DesktopGL/Content/bullet.xnb</DestFile>
-  <DestTime>2024-10-11T12:59:48.264608+01:00</DestTime>
+  <DestTime>2024-10-11T16:33:03.8222297+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2024-08-16T18:05:56+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

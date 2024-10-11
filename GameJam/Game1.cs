@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using GameJam.core;
 using GameJam.entitys;
+using System.ComponentModel.Design;
+using System.Diagnostics;
 
 namespace GameJam;
 
@@ -15,6 +17,7 @@ public class Game1 : Game
     private MouseState _MouseState;
     private List<Rigidbody> _rigidbodyBatch = new List<Rigidbody>();
     private IDictionary<string, Texture2D> _spriteList = new Dictionary<string, Texture2D>();
+    bool shoot_pressed = false;
 
     public Game1()
     {
@@ -29,7 +32,6 @@ public class Game1 : Game
     protected override void Initialize()
     {
         base.Initialize();
-
     }
 
     protected override void LoadContent()
@@ -48,6 +50,16 @@ public class Game1 : Game
             Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
+        if (!shoot_pressed && Keyboard.GetState().IsKeyDown(Keys.Space))
+        {
+            shoot_pressed = true;
+        }
+
+        if (Keyboard.GetState().IsKeyUp(Keys.Space))
+        {
+            shoot_pressed = false;
+        }
+
         foreach (var rigidbody in _rigidbodyBatch) rigidbody.PhysicsUpdate();
 
         _MouseState = Mouse.GetState();
@@ -62,6 +74,11 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
         _spriteBatch.Begin();
         _Cursor.gameObject.Draw(_spriteBatch);
+
+        if (shoot_pressed == true)
+        {
+            // Draw bullet sprite
+        }
         _spriteBatch.End();
         // TODO: Add your drawing code here
 

@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|solutionrelative:entitys\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\garro\\desktop\\threethinggame2024\\gamejam\\core\\rigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|solutionrelative:core\\rigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\garro\\desktop\\threethinggame2024\\gamejam\\entitys\\cursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|solutionrelative:entitys\\cursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\garro\\desktop\\threethinggame2024\\gamejam\\core\\rigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|solutionrelative:core\\rigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\garro\\desktop\\threethinggame2024\\gamejam\\core\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Game1.cs",
+              "DocumentMoniker": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\Game1.cs",
+              "RelativeDocumentMoniker": "Game1.cs",
+              "ToolTip": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\Game1.cs",
+              "RelativeToolTip": "Game1.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwDgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T19:57:38.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Cursor.cs",
               "DocumentMoniker": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\entitys\\Cursor.cs",
               "RelativeDocumentMoniker": "entitys\\Cursor.cs",
@@ -42,8 +55,7 @@
               "RelativeToolTip": "entitys\\Cursor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T12:00:00.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T12:00:00.555Z"
             },
             {
               "$type": "Document",
@@ -53,36 +65,21 @@
               "RelativeDocumentMoniker": "entitys\\Bullet.cs",
               "ToolTip": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\entitys\\Bullet.cs",
               "RelativeToolTip": "entitys\\Bullet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T11:42:18.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T11:42:18.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Rigidbody.cs",
               "DocumentMoniker": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\core\\Rigidbody.cs",
               "RelativeDocumentMoniker": "core\\Rigidbody.cs",
               "ToolTip": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\core\\Rigidbody.cs",
               "RelativeToolTip": "core\\Rigidbody.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T11:01:50.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Game1.cs",
-              "DocumentMoniker": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\Game1.cs",
-              "RelativeDocumentMoniker": "Game1.cs",
-              "ToolTip": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\Game1.cs",
-              "RelativeToolTip": "Game1.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAmwCwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T19:57:38.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T11:01:50.633Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "core\\GameObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:28:46.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T16:28:46.313Z"
             }
           ]
         }
