@@ -8,7 +8,7 @@ public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
-    private PlayerObj _Player;
+    private CursorObj _Cursor;
     private MouseState _MouseState;
 
     public Game1()
@@ -30,9 +30,9 @@ public class Game1 : Game
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
-        _Player = new PlayerObj("Player", new Rectangle(1, 1, 1, 1));
+        _Cursor = new CursorObj("Cursor", new Rectangle(1, 1, 1, 1));
 
-        _Player.gameObject.sprite = Content.Load<Texture2D>("TestSprite");
+        _Cursor.gameObject.sprite = Content.Load<Texture2D>("TestSprite");
 
         // TODO: use this.Content to load your game content here
     }
@@ -45,7 +45,7 @@ public class Game1 : Game
 
         // TODO: Add your update logic here
         _MouseState = Mouse.GetState();
-        _Player.SetPosition(_MouseState.Position.ToVector2());
+        _Cursor.SetPosition(_MouseState.Position.ToVector2());
 
         base.Update(gameTime);
     }
@@ -54,7 +54,7 @@ public class Game1 : Game
     {
         GraphicsDevice.Clear(Color.CornflowerBlue);
         _spriteBatch.Begin();
-        _Player.gameObject.Draw(_spriteBatch);
+        _Cursor.gameObject.Draw(_spriteBatch);
         _spriteBatch.End();
         // TODO: Add your drawing code here
 

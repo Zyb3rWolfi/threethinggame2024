@@ -4,11 +4,11 @@ using System.Runtime.CompilerServices;
 
 namespace GameJam;
 
-class PlayerObj
+class CursorObj
 {
     public GameObject gameObject;
 
-    public PlayerObj(string name, Rectangle box)
+    public CursorObj(string name, Rectangle box)
     {
         gameObject = new GameObject();
         gameObject.name = name;
