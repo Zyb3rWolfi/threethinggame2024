@@ -1,9 +1,9 @@
-﻿using System;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using GameJam.core;
+using GameJam.entitys;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 namespace GameJam;
@@ -20,6 +20,8 @@ public class Game1 : Game
     private MouseState _MouseState;
     private Rigidbody _playerRigidbody;
     private List<Rigidbody> _rigidbodyBatch = new List<Rigidbody>();
+    private IDictionary<string, Texture2D> _spriteList = new Dictionary<string, Texture2D>();
+
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -46,6 +48,8 @@ public class Game1 : Game
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         _Cursor = new CursorObj("Cursor", new Rectangle(1, 1, 1, 1));
 
+        _Cursor.gameObject.sprite = Content.Load<Texture2D>("TestSprite");
+        _spriteList.Add("bulletSprite", Content.Load<Texture2D>("bullet"));
 
         // TODO: use this.Content to load your game content here
         
@@ -78,6 +82,7 @@ public class Game1 : Game
         floor.hitBox = new Rectangle(0, _graphics.PreferredBackBufferHeight - floor.sprite.Height * 4, _graphics.PreferredBackBufferWidth, floor.sprite.Height * 4);
         _MouseState = Mouse.GetState();
         _Cursor.SetPosition(_MouseState.Position.ToVector2());
+
 
         // TODO: Add your update logic here
         
