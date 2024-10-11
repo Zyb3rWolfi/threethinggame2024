@@ -13,7 +13,11 @@
 
 #---------------------------------- Content ---------------------------------#
 
+<<<<<<< HEAD
 #begin floor.png
+=======
+#begin TestSprite.png
+>>>>>>> 280af3d92dead4253c11d8f31b65e4190b43aa3c
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -23,6 +27,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< HEAD
 /build:floor.png
 
 #begin Parrot the pirate.png
@@ -36,4 +41,7 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Parrot the pirate.png;player.png
+=======
+/build:TestSprite.png
+>>>>>>> 280af3d92dead4253c11d8f31b65e4190b43aa3c
 

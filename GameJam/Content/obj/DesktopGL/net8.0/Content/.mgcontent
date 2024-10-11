@@ -4,11 +4,18 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+<<<<<<< HEAD
     <File>C:/Users/Antons Loshka/Documents/gameJam/threethinggame2024/GameJam/Content/floor.png</File>
     <File>C:/Users/Antons Loshka/Documents/gameJam/threethinggame2024/GameJam/Content/Parrot the pirate.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
     <File>player.png</File>
+=======
+    <File>C:/Users/909317/threethinggame2024/GameJam/Content/TestSprite.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+>>>>>>> 280af3d92dead4253c11d8f31b65e4190b43aa3c
   </DestFiles>
 </SourceFileCollection>

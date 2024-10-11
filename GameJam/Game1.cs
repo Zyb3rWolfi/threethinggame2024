@@ -20,14 +20,15 @@ public class Game1 : Game
     
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
-    
+    private CursorObj _Cursor;
+    private MouseState _MouseState;
 
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
-        IsMouseVisible = true;
-        _graphics.IsFullScreen = true;
+        IsMouseVisible = false;
+        _graphics.IsFullScreen = false;
         _graphics.PreferredBackBufferWidth = 1920;
         _graphics.PreferredBackBufferHeight = 1080;
         _graphics.PreferMultiSampling = false;
@@ -41,11 +42,15 @@ public class Game1 : Game
         
         playerSpeed = 200f;
         base.Initialize();
+
     }
 
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
+        _Cursor = new CursorObj("Cursor", new Rectangle(1, 1, 1, 1));
+
+        _Cursor.gameObject.sprite = Content.Load<Texture2D>("TestSprite");
 
         // TODO: use this.Content to load your game content here
         
@@ -68,6 +73,9 @@ public class Game1 : Game
             Exit();
 
         // TODO: Add your update logic here
+        _MouseState = Mouse.GetState();
+        _Cursor.SetPosition(_MouseState.Position.ToVector2());
+
         
         position.Y += gravity;
         
@@ -88,7 +96,9 @@ public class Game1 : Game
     protected override void Draw(GameTime gameTime)
     {
         GraphicsDevice.Clear(Color.CornflowerBlue);
-
+        _spriteBatch.Begin();
+        _Cursor.gameObject.Draw(_spriteBatch);
+        _spriteBatch.End();
         // TODO: Add your drawing code here
         
         
