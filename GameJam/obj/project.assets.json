@@ -238,24 +238,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zakkd\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\garro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\GameJam.csproj",
+      "projectUniqueName": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\GameJam.csproj",
       "projectName": "GameJam",
-      "projectPath": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\GameJam.csproj",
-      "packagesPath": "C:\\Users\\zakkd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\obj\\",
+      "projectPath": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\GameJam.csproj",
+      "packagesPath": "C:\\Users\\garro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\garro\\Desktop\\threethinggame2024\\GameJam\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\zakkd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\garro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -263,6 +258,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -311,7 +307,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

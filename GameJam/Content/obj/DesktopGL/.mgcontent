@@ -4,9 +4,11 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/zakkd/threethinggame2024/GameJam/Content/TestSprite.png</File>
+    <File>C:/Users/garro/Desktop/threethinggame2024/GameJam/Content/bullet.png</File>
+    <File>C:/Users/garro/Desktop/threethinggame2024/GameJam/Content/TestSprite.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

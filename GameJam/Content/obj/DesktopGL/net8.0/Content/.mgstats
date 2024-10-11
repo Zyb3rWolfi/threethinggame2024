@@ -1,2 +1,3 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/909317/threethinggame2024/GameJam/Content/TestSprite.png","C:/Users/909317/threethinggame2024/GameJam/Content/bin/DesktopGL/Content/TestSprite.xnb","TextureProcessor","Texture2DContent",345,6741,0.1367063
+"C:/Users/garro/Desktop/threethinggame2024/GameJam/Content/bullet.png","C:/Users/garro/Desktop/threethinggame2024/GameJam/Content/bin/DesktopGL/Content/bullet.xnb","TextureProcessor","Texture2DContent",514,240085,0.190713
+"C:/Users/garro/Desktop/threethinggame2024/GameJam/Content/TestSprite.png","C:/Users/garro/Desktop/threethinggame2024/GameJam/Content/bin/DesktopGL/Content/TestSprite.xnb","TextureProcessor","Texture2DContent",345,6741,0.0051689

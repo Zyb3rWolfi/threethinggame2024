@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using GameJam.core;
+using GameJam.entitys;
 
 namespace GameJam;
 
@@ -13,6 +14,7 @@ public class Game1 : Game
     private CursorObj _Cursor;
     private MouseState _MouseState;
     private List<Rigidbody> _rigidbodyBatch = new List<Rigidbody>();
+    private IDictionary<string, Texture2D> _spriteList = new Dictionary<string, Texture2D>();
 
     public Game1()
     {
@@ -36,7 +38,7 @@ public class Game1 : Game
         _Cursor = new CursorObj("Cursor", new Rectangle(1, 1, 1, 1));
 
         _Cursor.gameObject.sprite = Content.Load<Texture2D>("TestSprite");
-
+        _spriteList.Add("bulletSprite", Content.Load<Texture2D>("bullet"));
         // TODO: use this.Content to load your game content here
     }
 
@@ -50,6 +52,7 @@ public class Game1 : Game
 
         _MouseState = Mouse.GetState();
         _Cursor.SetPosition(_MouseState.Position.ToVector2());
+
 
         base.Update(gameTime);
     }
