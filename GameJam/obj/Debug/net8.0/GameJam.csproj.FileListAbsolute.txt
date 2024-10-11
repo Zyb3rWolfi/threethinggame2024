@@ -51,3 +51,4 @@ C:\Users\Antons Loshka\Documents\gameJam\threethinggame2024\GameJam\obj\Debug\ne
 C:\Users\Antons Loshka\Documents\gameJam\threethinggame2024\GameJam\obj\Debug\net8.0\GameJam.genruntimeconfig.cache
 C:\Users\Antons Loshka\Documents\gameJam\threethinggame2024\GameJam\obj\Debug\net8.0\ref\GameJam.dll
 C:\Users\Antons Loshka\Documents\gameJam\threethinggame2024\GameJam\bin\Debug\net8.0\Content\player.xnb
+C:\Users\Antons Loshka\Documents\gameJam\threethinggame2024\GameJam\bin\Debug\net8.0\Content\floor.xnb

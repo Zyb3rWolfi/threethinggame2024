@@ -9,8 +9,14 @@ namespace GameJam;
 public class Game1 : Game
 {
     private Texture2D playerTexture;
+    private Texture2D floorTexture;
     private Vector2 position;
     private float playerSpeed;
+    private GameObject player;
+    private GameObject floor;
+    private const float gravity = 9.8f;
+    private const float jumpHeight = 10f;
+    private Vector2 floorPosition;
     
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
@@ -32,8 +38,8 @@ public class Game1 : Game
     {
         // TODO: Add your initialization logic here
         position = new Vector2(_graphics.PreferredBackBufferWidth / 2, _graphics.PreferredBackBufferHeight / 2);
-        playerSpeed = 200f;
         
+        playerSpeed = 200f;
         base.Initialize();
     }
 
@@ -43,7 +49,16 @@ public class Game1 : Game
 
         // TODO: use this.Content to load your game content here
         
-        playerTexture = Content.Load<Texture2D>("player");
+        player = new GameObject();
+        player.sprite = "player";
+        player.name = "player";
+
+        floor = new GameObject();
+        floor.sprite = "floor";
+        floor.name = "floor";
+        floorTexture = Content.Load<Texture2D>(floor.sprite);
+        playerTexture = Content.Load<Texture2D>(player.sprite);
+        
     }
 
     protected override void Update(GameTime gameTime)
@@ -53,6 +68,9 @@ public class Game1 : Game
             Exit();
 
         // TODO: Add your update logic here
+        
+        position.Y += gravity;
+        
         float updatedPlayerSpeed = playerSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
         var keyboardState = Keyboard.GetState();
         if (keyboardState.IsKeyDown(Keys.D))
@@ -63,6 +81,7 @@ public class Game1 : Game
         {
             position.X -= updatedPlayerSpeed;
         }
+        
         base.Update(gameTime);
     }
 
@@ -76,6 +95,7 @@ public class Game1 : Game
         _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, RasterizerState.CullCounterClockwise);
         Rectangle playerRectangle = new Rectangle((int)position.X, (int)position.Y, playerTexture.Width * 4, playerTexture.Height * 4);
         _spriteBatch.Draw(playerTexture, playerRectangle, Color.White);
+        _spriteBatch.Draw(floorTexture, new Rectangle(0, _graphics.PreferredBackBufferHeight - floorTexture.Height, _graphics.PreferredBackBufferWidth, floorTexture.Height), Color.White);
         _spriteBatch.End();
 
         base.Draw(gameTime);

@@ -1,6 +1,8 @@
 using Microsoft.Xna.Framework.Graphics;
 using System.Drawing;
+using System.Net.Mime;
 using System.Numerics;
+using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 namespace GameJam;
 
@@ -10,4 +12,6 @@ class GameObject
     public string sprite = null; 
     public Rectangle hitBox; 
     public string name = null;
+    
+
 }
