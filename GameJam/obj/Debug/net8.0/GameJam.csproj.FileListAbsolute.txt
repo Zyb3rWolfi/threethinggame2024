@@ -24,3 +24,4 @@ C:\Users\zakkd\threethinggame2024\GameJam\obj\Debug\net8.0\refint\GameJam.dll
 C:\Users\zakkd\threethinggame2024\GameJam\obj\Debug\net8.0\GameJam.pdb
 C:\Users\zakkd\threethinggame2024\GameJam\obj\Debug\net8.0\GameJam.genruntimeconfig.cache
 C:\Users\zakkd\threethinggame2024\GameJam\obj\Debug\net8.0\ref\GameJam.dll
+C:\Users\zakkd\threethinggame2024\GameJam\bin\Debug\net8.0\Content\TestSprite.xnb

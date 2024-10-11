@@ -8,27 +8,31 @@ public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
+    private PlayerObj _Player;
+    private MouseState _MouseState;
 
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
-        IsMouseVisible = true;
-        _graphics.IsFullScreen = true;
+        IsMouseVisible = false;
+        _graphics.IsFullScreen = false;
         _graphics.PreferredBackBufferWidth = 1920;
         _graphics.PreferredBackBufferHeight = 1080;
     }
 
     protected override void Initialize()
     {
-        // TODO: Add your initialization logic here
-
         base.Initialize();
+
     }
 
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
+        _Player = new PlayerObj("Player", new Rectangle(1, 1, 1, 1));
+
+        _Player.gameObject.sprite = Content.Load<Texture2D>("TestSprite");
 
         // TODO: use this.Content to load your game content here
     }
@@ -40,6 +44,8 @@ public class Game1 : Game
             Exit();
 
         // TODO: Add your update logic here
+        _MouseState = Mouse.GetState();
+        _Player.SetPosition(_MouseState.Position.ToVector2());
 
         base.Update(gameTime);
     }
@@ -47,7 +53,9 @@ public class Game1 : Game
     protected override void Draw(GameTime gameTime)
     {
         GraphicsDevice.Clear(Color.CornflowerBlue);
-
+        _spriteBatch.Begin();
+        _Player.gameObject.Draw(_spriteBatch);
+        _spriteBatch.End();
         // TODO: Add your drawing code here
 
         base.Draw(gameTime);
