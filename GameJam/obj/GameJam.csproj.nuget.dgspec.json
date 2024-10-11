@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\GameJam.csproj": {}
+    "C:\\Users\\Antons Loshka\\Documents\\gameJam\\threethinggame2024\\GameJam\\GameJam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\GameJam.csproj": {
+    "C:\\Users\\Antons Loshka\\Documents\\gameJam\\threethinggame2024\\GameJam\\GameJam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\GameJam.csproj",
+        "projectUniqueName": "C:\\Users\\Antons Loshka\\Documents\\gameJam\\threethinggame2024\\GameJam\\GameJam.csproj",
         "projectName": "GameJam",
-        "projectPath": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\GameJam.csproj",
-        "packagesPath": "C:\\Users\\zakkd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\obj\\",
+        "projectPath": "C:\\Users\\Antons Loshka\\Documents\\gameJam\\threethinggame2024\\GameJam\\GameJam.csproj",
+        "packagesPath": "C:\\Users\\Antons Loshka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Antons Loshka\\Documents\\gameJam\\threethinggame2024\\GameJam\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zakkd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Antons Loshka\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
