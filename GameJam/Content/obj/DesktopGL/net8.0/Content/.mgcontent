@@ -4,9 +4,9 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Antons Loshka/Documents/gameJam/threethinggame2024/GameJam/Content/floor.png</File>
-    <File>C:/Users/Antons Loshka/Documents/gameJam/threethinggame2024/GameJam/Content/player.png</File>
-    <File>C:/Users/Antons Loshka/Documents/gameJam/threethinggame2024/GameJam/Content/TestSprite.png</File>
+    <File>C:/Users/909317/threethinggame2024/GameJam/Content/floor.png</File>
+    <File>C:/Users/909317/threethinggame2024/GameJam/Content/player.png</File>
+    <File>C:/Users/909317/threethinggame2024/GameJam/Content/TestSprite.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

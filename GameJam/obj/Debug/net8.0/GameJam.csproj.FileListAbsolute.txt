@@ -85,3 +85,6 @@ C:\Users\909317\threethinggame2024\GameJam\obj\Debug\net8.0\ref\GameJam.dll
 >>>>>>> 280af3d92dead4253c11d8f31b65e4190b43aa3c
 C:\Users\Antons Loshka\Documents\gameJam\threethinggame2024\GameJam\bin\Debug\net8.0\Content\TestSprite.xnb
 C:\Users\Antons Loshka\Documents\gameJam\threethinggame2024\GameJam\bin\Debug\net8.0\Content\bullet.xnb
+C:\Users\909317\threethinggame2024\GameJam\bin\Debug\net8.0\Content\bullet.xnb
+C:\Users\909317\threethinggame2024\GameJam\bin\Debug\net8.0\Content\floor.xnb
+C:\Users\909317\threethinggame2024\GameJam\bin\Debug\net8.0\Content\player.xnb

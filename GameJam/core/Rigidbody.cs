@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using GameJam.entitys;
+using Microsoft.Xna.Framework;
 
 namespace GameJam.core
 {
@@ -24,12 +25,15 @@ namespace GameJam.core
             {
                 velocity.Y = 0;
             }
-            _gameObject.position += velocity;
             velocity.Y += _gravityIntensity * gravityMultiplier;
             if (velocity.Y > _terminalVerlocity)
             {
                 velocity.Y = _terminalVerlocity;
             }
+
+
+            _gameObject.position += velocity;
+            _gameObject.hitBox = new Rectangle((int)_gameObject.position.X, (int)_gameObject.position.Y, _gameObject.sprite.Width * 4, _gameObject.sprite.Height * 4);
         }
     }
 }
