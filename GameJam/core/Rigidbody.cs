@@ -1,4 +1,6 @@
-﻿namespace GameJam.core
+﻿using System.Numerics;
+
+namespace GameJam.core
 {
     internal class Rigidbody
     {
@@ -7,7 +9,7 @@
 
         public float gravityMultiplier = 1.0f;
         private GameObject _gameObject;
-        public float velocity;
+        public Vector2 velocity = new Vector2(0,0);
 
         public Rigidbody(GameObject gameObject)
         {
@@ -16,7 +18,7 @@
 
         public void PhysicsUpdate()
         {
-
+            _gameObject.position += velocity;
 
 
         }

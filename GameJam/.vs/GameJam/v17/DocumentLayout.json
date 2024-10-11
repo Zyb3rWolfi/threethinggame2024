@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\909317\\threethinggame2024\\GameJam\\",
+  "WorkspaceRootPath": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\909317\\threethinggame2024\\gamejam\\core\\rigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\zakkd\\threethinggame2024\\gamejam\\core\\rigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|solutionrelative:core\\rigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\909317\\threethinggame2024\\gamejam\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\zakkd\\threethinggame2024\\gamejam\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\909317\\threethinggame2024\\gamejam\\core\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\zakkd\\threethinggame2024\\gamejam\\core\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|solutionrelative:core\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\909317\\threethinggame2024\\gamejam\\entitys\\cursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|c:\\users\\zakkd\\threethinggame2024\\gamejam\\entitys\\cursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{336BBFC7-E229-4E7B-BF95-8D6462858283}|GameJam.csproj|solutionrelative:entitys\\cursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Rigidbody.cs",
-              "DocumentMoniker": "C:\\Users\\909317\\threethinggame2024\\GameJam\\core\\Rigidbody.cs",
+              "DocumentMoniker": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\core\\Rigidbody.cs",
               "RelativeDocumentMoniker": "core\\Rigidbody.cs",
-              "ToolTip": "C:\\Users\\909317\\threethinggame2024\\GameJam\\core\\Rigidbody.cs",
+              "ToolTip": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\core\\Rigidbody.cs",
               "RelativeToolTip": "core\\Rigidbody.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T11:01:50.633Z",
               "EditorCaption": ""
@@ -45,44 +45,37 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Cursor.cs",
-              "DocumentMoniker": "C:\\Users\\909317\\threethinggame2024\\GameJam\\entitys\\Cursor.cs",
+              "DocumentMoniker": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\entitys\\Cursor.cs",
               "RelativeDocumentMoniker": "entitys\\Cursor.cs",
-              "ToolTip": "C:\\Users\\909317\\threethinggame2024\\GameJam\\entitys\\Cursor.cs",
+              "ToolTip": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\entitys\\Cursor.cs",
               "RelativeToolTip": "entitys\\Cursor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T20:49:14.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T20:49:14.991Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Game1.cs",
-              "DocumentMoniker": "C:\\Users\\909317\\threethinggame2024\\GameJam\\Game1.cs",
+              "DocumentMoniker": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\Game1.cs",
               "RelativeDocumentMoniker": "Game1.cs",
-              "ToolTip": "C:\\Users\\909317\\threethinggame2024\\GameJam\\Game1.cs",
+              "ToolTip": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\Game1.cs",
               "RelativeToolTip": "Game1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T19:57:38.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T19:57:38.885Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "GameObject.cs",
-              "DocumentMoniker": "C:\\Users\\909317\\threethinggame2024\\GameJam\\core\\GameObject.cs",
+              "DocumentMoniker": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\core\\GameObject.cs",
               "RelativeDocumentMoniker": "core\\GameObject.cs",
-              "ToolTip": "C:\\Users\\909317\\threethinggame2024\\GameJam\\core\\GameObject.cs",
+              "ToolTip": "C:\\Users\\zakkd\\threethinggame2024\\GameJam\\core\\GameObject.cs",
               "RelativeToolTip": "core\\GameObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:28:46.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2024-10-10T16:28:46.313Z"
             }
           ]
         }
