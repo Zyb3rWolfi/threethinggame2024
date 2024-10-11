@@ -1,8 +1,8 @@
-﻿using System.Numerics;
-using GameJam.core;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
+using GameJam.core;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 namespace GameJam;
@@ -17,8 +17,9 @@ public class Game1 : Game
     
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
-
-
+    private CursorObj _Cursor;
+    private MouseState _MouseState;
+    private List<Rigidbody> _rigidbodyBatch = new List<Rigidbody>();
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -44,6 +45,7 @@ public class Game1 : Game
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
+        _Cursor = new CursorObj("Cursor", new Rectangle(1, 1, 1, 1));
 
 
         // TODO: use this.Content to load your game content here
@@ -59,6 +61,11 @@ public class Game1 : Game
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
             Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
+
+        foreach (var rigidbody in _rigidbodyBatch) rigidbody.PhysicsUpdate();
+
+        _MouseState = Mouse.GetState();
+        _Cursor.SetPosition(_MouseState.Position.ToVector2());
 
         // TODO: Add your update logic here
         
