@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
@@ -9,8 +10,6 @@ namespace GameJam;
 
 public class Game1 : Game
 {
-    private Texture2D playerTexture;
-    private Vector2 position;
     private float playerSpeed;
     private GameObject player;
     private GameObject floor;
@@ -19,6 +18,7 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
     private CursorObj _Cursor;
     private MouseState _MouseState;
+    private Rigidbody _playerRigidbody;
     private List<Rigidbody> _rigidbodyBatch = new List<Rigidbody>();
     public Game1()
     {
@@ -35,7 +35,6 @@ public class Game1 : Game
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
-        position = new Vector2(_graphics.PreferredBackBufferWidth / 2, _graphics.PreferredBackBufferHeight / 2);
         
         playerSpeed = 200f;
         base.Initialize();
@@ -52,6 +51,14 @@ public class Game1 : Game
         
         player = new GameObject();
         player.sprite = Content.Load<Texture2D>("player");
+
+        floor = new GameObject();
+        floor.sprite = Content.Load<Texture2D>("floor");
+        
+        player.position = new Vector2(0,0); // Set initial position
+        _playerRigidbody = new Rigidbody(player);
+        _rigidbodyBatch.Add(_playerRigidbody);
+        
         player.name = "player";
         
     }
@@ -62,22 +69,28 @@ public class Game1 : Game
             Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
-        foreach (var rigidbody in _rigidbodyBatch) rigidbody.PhysicsUpdate();
-
+        foreach (var rigidbody in _rigidbodyBatch)
+        {
+            rigidbody.PhysicsUpdate(floor);
+        };
+        
+        player.hitBox = new Rectangle((int)player.position.X, (int)player.position.Y, player.sprite.Width * 4, player.sprite.Height * 4);
+        floor.hitBox = new Rectangle(0, _graphics.PreferredBackBufferHeight - floor.sprite.Height * 4, _graphics.PreferredBackBufferWidth, floor.sprite.Height * 4);
         _MouseState = Mouse.GetState();
         _Cursor.SetPosition(_MouseState.Position.ToVector2());
 
         // TODO: Add your update logic here
         
+        
         float updatedPlayerSpeed = playerSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
         var keyboardState = Keyboard.GetState();
         if (keyboardState.IsKeyDown(Keys.D))
         {
-            position.X += updatedPlayerSpeed;
+            _playerRigidbody.velocity.X += updatedPlayerSpeed;
         }
         if (keyboardState.IsKeyDown(Keys.A))
         {
-            position.X -= updatedPlayerSpeed;
+            _playerRigidbody.velocity.X -= updatedPlayerSpeed;
         }
         
         base.Update(gameTime);
@@ -92,8 +105,9 @@ public class Game1 : Game
         
         
         _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, RasterizerState.CullCounterClockwise);
-         Rectangle playerRectangle = new Rectangle((int)position.X, (int)position.Y, player.sprite.Width * 4, player.sprite.Height * 4);
+        Rectangle playerRectangle = new Rectangle((int)player.position.X, (int)player.position.Y, player.sprite.Width * 4, player.sprite.Height * 4);
         _spriteBatch.Draw(player.sprite, playerRectangle, Color.White);
+        _spriteBatch.Draw(floor.sprite, new Rectangle(0, _graphics.PreferredBackBufferHeight - floor.sprite.Height * 4, _graphics.PreferredBackBufferWidth, floor.sprite.Height * 4), Color.White);
         _spriteBatch.End();
 
         base.Draw(gameTime);

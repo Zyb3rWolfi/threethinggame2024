@@ -10,8 +10,6 @@ class GameObject
     public Rectangle hitBox; 
     public string name = null;
     
-
-
     public void Draw(SpriteBatch _spriteBatch)
     {
         _spriteBatch.Draw(sprite, position, Color.White);

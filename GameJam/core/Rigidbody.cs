@@ -16,11 +16,20 @@ namespace GameJam.core
             _gameObject = gameObject;
         }
 
-        public void PhysicsUpdate()
+
+
+        public void PhysicsUpdate(GameObject collisionObject)
         {
+            if (_gameObject.hitBox.Intersects(collisionObject.hitBox))
+            {
+                velocity.Y = 0;
+            }
             _gameObject.position += velocity;
-
-
+            velocity.Y += _gravityIntensity * gravityMultiplier;
+            if (velocity.Y > _terminalVerlocity)
+            {
+                velocity.Y = _terminalVerlocity;
+            }
         }
     }
 }
