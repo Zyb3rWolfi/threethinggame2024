@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
+using GameJam.core;
 
 namespace GameJam;
 
@@ -10,6 +12,7 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
     private CursorObj _Cursor;
     private MouseState _MouseState;
+    private List<Rigidbody> _rigidbodyBatch = new List<Rigidbody>();
 
     public Game1()
     {
@@ -43,7 +46,8 @@ public class Game1 : Game
             Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
-        // TODO: Add your update logic here
+        foreach (var rigidbody in _rigidbodyBatch) rigidbody.PhysicsUpdate();
+
         _MouseState = Mouse.GetState();
         _Cursor.SetPosition(_MouseState.Position.ToVector2());
 
