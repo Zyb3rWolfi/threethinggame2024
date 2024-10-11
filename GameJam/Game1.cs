@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using GameJam.core;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -9,19 +10,14 @@ namespace GameJam;
 public class Game1 : Game
 {
     private Texture2D playerTexture;
-    private Texture2D floorTexture;
     private Vector2 position;
     private float playerSpeed;
     private GameObject player;
     private GameObject floor;
-    private const float gravity = 9.8f;
-    private const float jumpHeight = 10f;
-    private Vector2 floorPosition;
     
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
-    private CursorObj _Cursor;
-    private MouseState _MouseState;
+
 
     public Game1()
     {
@@ -48,21 +44,13 @@ public class Game1 : Game
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
-        _Cursor = new CursorObj("Cursor", new Rectangle(1, 1, 1, 1));
 
-        _Cursor.gameObject.sprite = Content.Load<Texture2D>("TestSprite");
 
         // TODO: use this.Content to load your game content here
         
         player = new GameObject();
-        player.sprite = "player";
+        player.sprite = Content.Load<Texture2D>("player");
         player.name = "player";
-
-        floor = new GameObject();
-        floor.sprite = "floor";
-        floor.name = "floor";
-        floorTexture = Content.Load<Texture2D>(floor.sprite);
-        playerTexture = Content.Load<Texture2D>(player.sprite);
         
     }
 
@@ -73,11 +61,6 @@ public class Game1 : Game
             Exit();
 
         // TODO: Add your update logic here
-        _MouseState = Mouse.GetState();
-        _Cursor.SetPosition(_MouseState.Position.ToVector2());
-
-        
-        position.Y += gravity;
         
         float updatedPlayerSpeed = playerSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
         var keyboardState = Keyboard.GetState();
@@ -97,15 +80,13 @@ public class Game1 : Game
     {
         GraphicsDevice.Clear(Color.CornflowerBlue);
         _spriteBatch.Begin();
-        _Cursor.gameObject.Draw(_spriteBatch);
         _spriteBatch.End();
         // TODO: Add your drawing code here
         
         
         _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, RasterizerState.CullCounterClockwise);
-        Rectangle playerRectangle = new Rectangle((int)position.X, (int)position.Y, playerTexture.Width * 4, playerTexture.Height * 4);
-        _spriteBatch.Draw(playerTexture, playerRectangle, Color.White);
-        _spriteBatch.Draw(floorTexture, new Rectangle(0, _graphics.PreferredBackBufferHeight - floorTexture.Height, _graphics.PreferredBackBufferWidth, floorTexture.Height), Color.White);
+         Rectangle playerRectangle = new Rectangle((int)position.X, (int)position.Y, player.sprite.Width * 4, player.sprite.Height * 4);
+        _spriteBatch.Draw(player.sprite, playerRectangle, Color.White);
         _spriteBatch.End();
 
         base.Draw(gameTime);

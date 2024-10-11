@@ -238,48 +238,24 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Antons Loshka\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\909317\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
->>>>>>> 280af3d92dead4253c11d8f31b65e4190b43aa3c
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Antons Loshka\\Documents\\gameJam\\threethinggame2024\\GameJam\\GameJam.csproj",
       "projectName": "GameJam",
       "projectPath": "C:\\Users\\Antons Loshka\\Documents\\gameJam\\threethinggame2024\\GameJam\\GameJam.csproj",
       "packagesPath": "C:\\Users\\Antons Loshka\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Antons Loshka\\Documents\\gameJam\\threethinggame2024\\GameJam\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\909317\\threethinggame2024\\GameJam\\GameJam.csproj",
-      "projectName": "GameJam",
-      "projectPath": "C:\\Users\\909317\\threethinggame2024\\GameJam\\GameJam.csproj",
-      "packagesPath": "C:\\Users\\909317\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\909317\\threethinggame2024\\GameJam\\obj\\",
->>>>>>> 280af3d92dead4253c11d8f31b65e4190b43aa3c
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\Antons Loshka\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-        "C:\\Users\\909317\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> 280af3d92dead4253c11d8f31b65e4190b43aa3c
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-<<<<<<< HEAD
-=======
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
->>>>>>> 280af3d92dead4253c11d8f31b65e4190b43aa3c
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
