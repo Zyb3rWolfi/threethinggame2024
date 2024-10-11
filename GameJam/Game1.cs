@@ -69,7 +69,7 @@ public class Game1 : Game
 
         foreach (var rigidbody in _rigidbodyBatch)
         {
-            rigidbody.PhysicsUpdate(floor);
+            rigidbody.PhysicsUpdate(_objects);
         };
 
         player.Update(gameTime);
